@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML - Forms</title>
-</head>
-<body>
-    <p>Uma tag <code>form</code> para começar</p>
-    <p>Um label e um input aqui:</p>
-    <p>E um botão para terminar.</p>
+  </head>
+  <body>
+    <form>
+      <!-- os atributos FOR e ID linkam o label ao input instruindo os usuários e os leitores de telas que estes estao correlacionados -->
+      <label for="email">Nome</label>
+      <input id="email" type="text" placeholder="Nome:" />
+      <br />
 
-</body>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Senha:" />
+      <br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
 </html>
+
+<!-- RECOMENDACAO DE LEITURA: https://www.handtalk.me/br/blog/acessibilidade-na-web/ && https://imasters.com.br/front-end/o-que-e-acessibilidade-web-e-como-tornar-seu-site-mais-acessivel -->
