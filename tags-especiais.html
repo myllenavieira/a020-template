@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links</title>
-</head>
-<body>
-    <!--Link normal aqui-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Links</title>
 
-    <p>Este p pode ser um link</p>
-    <span>Este span também!</span>
-    <p>Posso transformar só um trechinho do texto em link também!</p>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Link externo -->
+    <a href="https://www.labenu.com.br/">Esse é um link externo</a>
+
+    <!--Link interno -->
+    <a href="tags-formulario.html">Esse é um link interno</a>
+
+    <a href="">
+      <span>Este span também!</span>
+    </a>
+
+    <p>Se quiser para de receber os e-mail: <a href=""> clique aqui </a></p>
 
     <!--Tags de mídia-->
-    <p>Vamos adicionar uma imagem aqui:</p>
+    <img src="https://cdn.pixabay.com/photo2022/07/17/12/12/pembroke-welsh-corgi-7327285_960_720.jpg" alt="Um lindo cachorrinho" />
 
-    <p>Um áudio aqui. </p>
+    <audio
+      src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/audios%2Fguitar-electro-sport-trailer-115571.mp3?alt=media&token=0d6e21e4-8aae-4320-9cf9-da4a33a0a1ae"
+      controls
+    >
+      O seu navegador nao suporta audio
+    </audio>
 
-    <p>E um vídeo aqui</p>
-
-</body>
+    <video
+      src="https://firebasestorage.googleapis.com/v0/b/assets-conteudo.appspot.com/o/videos%2FDog%20-%2045588.mp4?alt=media&token=fabd6839-7cd3-412b-a7a1-bd5afc6860cf"
+      height="360px"
+      autoplay
+    ></video>
+  </body>
 </html>
